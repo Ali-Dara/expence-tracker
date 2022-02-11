@@ -33,3 +33,71 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.expenceBox{
+  display:flex;
+  width: 135px;
+  justify-content:center;
+  align-items: center;
+  border-radius:5px;
+  border: 1px solid #ccc;height:50px;
+  padding:10px;
+  flex-direction:column;
+}
+
+.btn{
+  outline:none;
+  padding:5px 10px;
+  background-color: #ede9fa;
+  color: #6d28d9;
+  border-radius:5px;
+  border: 1px solid #6d28d9
+}
+
+.primary{
+  color:#fff;
+  background-color:#6d28d9;
+  margin:20px 0;
+}
+
+.cancel{
+  background-color:#fff;
+  color:red;
+  border:1px solid red;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  min-height: 150px;
+  justify-content:space-between;
+  margin-bottom:30px;
+}
+
+input{
+  border:1px solid #ccc;
+  padding:10px 12px;
+  outline:none;
+  border-radius:5px;
+}
+
+input[type="radio"]{
+  margin-left:10px;
+}
+
+.radioBox{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  font-size:14px;
+}
+
+.transaction{
+  border-radius: 5px;
+  background:#f4f4f5;
+  padding: 10px;
+  font-weight: bold;
+  margin-top:15px;
+  display:flex;
+  justify-content:space-between;
+}

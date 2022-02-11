@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TransActionForm = ({addTransaction}) => {
+const TransActionForm = ({ addTransaction }) => {
   const [values, setValues] = useState({
     type: "expence",
     amount: 0,
@@ -12,8 +12,8 @@ const TransActionForm = ({addTransaction}) => {
   };
 
   const handleSubmit = (e) => {
-      e.preventDefault();
-      addTransaction(values);
+    e.preventDefault();
+    addTransaction(values);
   };
 
   return (
@@ -30,8 +30,9 @@ const TransActionForm = ({addTransaction}) => {
         value={values.amount}
         onChange={(e) => handleChange(e)}
       />
-      <div>
+      <div className="radioBox">
         <input
+          name="type"
           type="radio"
           value="expence"
           checked={values.type === "expence"}
@@ -46,7 +47,7 @@ const TransActionForm = ({addTransaction}) => {
         />
         <label>income</label>
       </div>
-      <button type="submit">
+      <button type="submit" className="btn primary">
         Add Transaction
       </button>
     </form>
